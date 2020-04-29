@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 import sys
 
-from smarthomes_skeleton_CNN_loader import *
+from NTU_loader import *
 from options import *
 
 from keras.models import Sequential
@@ -90,9 +90,9 @@ if __name__ == '__main__':
             'split_path': dataset_splits_path
         }
     
-        train_generator = DataGeneratorEnd(paths, patches_list, 'train_'+split, batch_size = batch_size)
-        val_generator = DataGeneratorEnd(paths, patches_list, 'validation_'+split, batch_size = batch_size)
-        test_generator = DataGeneratorEnd(paths, patches_list, 'test_'+split, batch_size = batch_size)
+        train_generator = DataGeneratorEnd(paths, patches_list, 'train_'+args.protocol, batch_size = batch_size)
+        val_generator = DataGeneratorEnd(paths, patches_list, 'validation_'+args.protocol, batch_size = batch_size)
+        test_generator = DataGeneratorEnd(paths, patches_list, 'test_'+args.protocol, batch_size = batch_size)
     
     
     model_checkpoint = CustomModelCheckpoint(model, './weights/weights_{}/epoch_'.format(model_name))

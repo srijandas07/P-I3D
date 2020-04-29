@@ -19,7 +19,7 @@ import numpy as np
 import glob
 from skimage.io import imread
 import cv2
-from loader import *
+from NTU_i3d_loader import *
 import argparse
 
 def parse():

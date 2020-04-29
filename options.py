@@ -18,7 +18,7 @@ def parse():
     parser.add_argument('--train_end_to_end', default=False, type=bool)
     parser.add_argument('--marker', default='ntu_reg_no1')
     parser.add_argument('--epochs', default=100, type=int) 
-
+    parser.add_argement('--model_wt', default=None, help='For testing script only, load best epoch weights')
     args = parser.parse_args()
     return args
 
