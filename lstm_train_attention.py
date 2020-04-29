@@ -82,7 +82,7 @@ if __name__ == '__main__':
     
     elif training_mode=='end':
         dataset_paths=['data/{}/{}/'.format(args.dataset, i) for i in patches_list]
-        dataset_splits_path = 'splits/{}'.format(args.dataset)
+        dataset_splits_path = 'splits/{}/'.format(args.dataset)
     
         paths = {
             'skeleton': 'data/{}/skeleton/'.format(args.dataset),
