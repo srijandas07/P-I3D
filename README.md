@@ -35,10 +35,11 @@ conda activate pi3d_env
 sh i3d_train.sh [DATASET] [PROTOCOL] [PART] [NUM_CLASSES] [BATCH_SIZE] [EPOCHS]
 ```
 
-2. The three layered stacked LSTM network is pretrained by following the following code.
+2. The three layered stacked LSTM network is pretrained by following the following [code](https://github.com/srijandas07/LSTM_action_recognition).
 
 3. The network is jointly trained using 
 ```bash
 conda activate pi3d_env
 python lstm_train_attention.py (optional arguments)
 ```
+The testing script can be found in test.py and requires the model weights of the best epoch to be passed as an argument.
