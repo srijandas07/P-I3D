@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 import sys
 
-from NTU_loader import *
+from ntu_skeleton_CNN_loader import *
 from options import *
 
 from keras.models import Sequential

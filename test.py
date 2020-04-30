@@ -3,7 +3,7 @@ import keras
 from keras.utils import multi_gpu_model
 from keras.models import load_model
 import sys
-from NTU_loader import *
+from ntu_skeleton_CNN_loader.py import *
 from models_attention import build_model_without_TS
 from multiprocessing import cpu_count
 from sklearn.metrics import accuracy_score
