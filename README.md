@@ -26,6 +26,11 @@ The following commands can then be used to install the dependencies:
 ```bash
 conda create --name pi3d_env tensorflow-gpu==1.13.1 keras scikit-image opencv
 ```
+#### DATA
+RGB frames for each dataset are in data/[DATASET]/[PART] folder.
+Skeleton files are present in data/[DATASET]/skeleton/ folder.
+
+The model weights while training will be stored in weights/ folder according to the model name and the corresponding logs can be found in the logs/ folder.
 
 #### TRAINING P-I3D
 Training is done in multiple stages:
