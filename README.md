@@ -1,5 +1,6 @@
 # P-I3D
-Where to focus on for Human Action Recognition?
+## Where to focus on for Human Action Recognition?
+![](image.png)
 
 #### REQUIRED PACKAGES AND DEPENDENCIES
 
